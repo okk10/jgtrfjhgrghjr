@@ -1,0 +1,8 @@
+from datetime import date
+def century_message(name, age, current_year):
+    year_100 = current_year + (100 - age)
+    print(f"{name}, тебе исполнится {age + 100 - age} в {year_100} году!")
+current_year = date.today().year
+name = input("Введите имя: ")
+age = int (input("Введите возраст: "))
+int (input(century_message(name, age, current_year)))
